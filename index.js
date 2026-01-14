@@ -1,3 +1,5 @@
+// trigger first vercel deploy
+
 const express = require('express');
 const app = express();
 const Shopify = require("shopify-api-node");
@@ -31,6 +33,7 @@ app.get('/:id', async (req, res) => {
 
 app.listen(process.env.PORT || 5000, 
 	() => console.log("Server is running..."));
+
 
 
 module.exports = app;    
